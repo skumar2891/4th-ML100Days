@@ -2,12 +2,13 @@
 
 ### 機器學習概論 Introduction of Machine Learning
 * **Day_01 : 資料介紹與評估指標**
-    * 探索流程 : 找到問題 -> 初探 -> 改進 -> 分享 -> 練習 -> 實戰
-    * 思考關鍵點 :
-        * 為什麼這個問題重要？
-        * 資料從何而來？
-        * 資料型態是什麼？
-        * 回答問題的關鍵指標是什麼？
+         Day_01: Information introduction and evaluation indicators
+         Exploration process: find the problem -> explore -> improve -> share -> practice -> actual combat
+         Key points to consider:
+         Why is this question important?
+         Where does the information come from?
+         What is the data type?
+         What are the key indicators to answer the question?
 * **Day_02 : 機器學習概論**
     * 機器學習範疇 : **深度學習 (Deep Learning)** ⊂ **機器學習 (Machine Learning)** ⊂ **人工智慧 (Artificial Intelligence)**
     * 機器學習是什麼 :
