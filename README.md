@@ -1,8 +1,7 @@
 # 4th-ML100Days
 
-### 機器學習概論 Introduction of Machine Learning
-* **Day_01 : 資料介紹與評估指標**
-         Day_01: Information introduction and evaluation indicators
+Introduction of Machine Learning
+Day_01: Information introduction and evaluation indicators
          Exploration process: find the problem -> explore -> improve -> share -> practice -> actual combat
          Key points to consider:
          Why is this question important?
