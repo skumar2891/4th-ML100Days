@@ -1,69 +1,55 @@
 # 4th-ML100Days
 
 Introduction of Machine Learning
-Day_01: Information introduction and evaluation indicators
-         Exploration process: find the problem -> explore -> improve -> share -> practice -> actual combat
-         Key points to consider:
-         Why is this question important?
-         Where does the information come from?
-         What is the data type?
-         What are the key indicators to answer the question?
-* **Day_02 : 機器學習概論**
-    * 機器學習範疇 : **深度學習 (Deep Learning)** ⊂ **機器學習 (Machine Learning)** ⊂ **人工智慧 (Artificial Intelligence)**
-    * 機器學習是什麼 :
-        * 讓機器從資料找尋規律與趨勢，不需要給定特殊規則
-        * 給定目標函數與訓練資料，學習出能讓目標函數最佳的模型參數
-    * 機器學習總類 :
-        * **監督是學習 (Supervised Learning)** : 圖像分類 (Classification)、詐騙偵測 (Fraud detection)，需成對資料 (x,y)
-        * **非監督是學習 (Unsupervised Learning)** : 降維 (Dimension Reduction)、分群 (Clustering)、壓縮，只需資料 (x)
-        * **強化學習 (Reinforcement Learning)** : 下圍棋、打電玩，透過代理機器人 (Agent) 與環境 (Environment) 互動，學習如何獲取最高獎勵 (Reward)，例如 Alpha GO
-* **Day_03 : 機器學習流程與步驟**
-    * **資料蒐集、前處理**
-        * 政府公開資料、Kaggle 資料
-            * 結構化資料 : Excel 檔、CSV 檔
-            * 非結構化資料 : 圖片、影音、文字
-        * 使用 Python 套件
-            * 開啟圖片 : `PIL`、`skimage`、`open-cv`
-            * 開啟文件 : `pandas`
-        * 資料前處理 :
-            * 缺失值填補
-            * 離群值處理
-            * 標準化
-    * **定義目標與評估準則**
-        * 回歸問題？分類問題？
-        * 預測目標是什麼？(target or y)
-        * 用什麼資料進行預測？(predictor or x)
-        * 將資料分為 :
-            * 訓練集，training set
-            * 驗證集，validation set
-            * 測試集，test set
-        * 評估指標
-            * 回歸問題 (預測值為實數)
-                * RMSE : Root Mean Squeare Error
-                * MAE : Mean Absolute Error
-                * R-Square
-            * 分類問題 (預測值為類別)
+* **Day_01: Information introduction and evaluation indicators**
+      * Exploration process: find the problem -> explore -> improve -> share -> practice -> actual combat
+      * Key points to consider:
+      * Why is this question important?
+      * Where does the information come from?
+      * What is the data type?
+      * What are the key indicators to answer the question?
+* **Day_02 : Introduction to Machine Learning**
+    * Machine learning category: **Deep Learning** ⊂ **Machine Learning** ⊂ **Artificial Intelligence**
+    * What is machine learning:
+        * Let the machine find rules and trends from data, no special rules are required
+        * Given the objective function and training data, learn the best model parameters for the objective function
+    * General category of machine learning:
+        * **Supervised Learning**: Image classification (Classification), Fraud detection (Fraud detection), need paired data (x,y)
+        * **Unsupervised Learning**: Dimension Reduction, Clustering, Compression, only data (x)
+        * **Reinforcement Learning**: Playing Go, playing video games, interacting with the Environment through the agent robot (Agent), and learning how to get the highest reward (Reward), such as Alpha GO
+* **Day_03 : Machine learning process and steps**
+    * **Data collection, pre-processing**
+        * Government public information, Kaggle information
+            * Structured data: Excel file, CSV file
+            * Unstructured data: pictures, videos, text
+        * Use Python package
+            * Open image: `PIL`, `skimage`, `open-cv`
+            * Open file: `pandas`
+        * Data pre-processing:
+            * Missing value filling
+            * Outlier processing
+            * Classification problem (predicted value is category)
                 * Accuracy
                 * [F1-score](https://en.wikipedia.org/wiki/F1_score)
                 * [AUC](https://zh.wikipedia.org/wiki/ROC%E6%9B%B2%E7%BA%BF)，Area Under Curve
-    * **建立模型與調整參數**
-        * Regression，回歸模型
-        * Tree-base model，樹模型
-        * Neural network，神經網路
-        * Hyperparameter，根據對模型了解和訓練情形進行調整
-    * **導入**
-        * 建立資料蒐集、前處理(Preprocessing)等流程
-        * 送進模型進行預測
-        * 輸出預測結果
-        * 視專案需求調整前後端
-* **Day_04 : 讀取資料與分析流程 (EDA，Exploratory Data Analysis)**   
-    * 透過視覺化和統計工具進行分析
-        * 了解資料 : 獲取資料包含的資訊、結構、特點
-        * 發現 outlier 或異常數值 : 檢查資料是否有誤
-        * 分析各變數間的關聯性 : 找出重要的變數
-    * 收集資料 -> 數據清理 -> 特徵萃取 -> 資料視覺化 -> 建立模型 -> 驗證模型 -> 決策應用
-### 資料清理與數據前處理 Data Cleaning and Preprocessing
-* **Day_05 : 如何建立一個 DataFrame？如何讀取其他資料？**
+    * **Build model and adjust parameters**
+        * Regression, regression model
+        * Tree-base model, tree model
+        * Neural network, neural network
+        * Hyperparameter, adjusted according to the understanding of the model and the training situation
+    * **Import**
+        * Establish data collection, preprocessing and other processes
+        * Send to the model for prediction
+        * Output prediction results
+        * Adjust the front and back ends according to project requirements
+* **Day_04 : Reading data and analysis process (EDA, Exploratory Data Analysis)**
+    * Analyze through visualization and statistical tools
+        * Understand the information: Get the information, structure, and characteristics contained in the data
+        * Found outlier or abnormal value: check the data for errors
+        * Analyze the correlation between variables: identify important variables
+    * Collect data -> Data cleaning -> Feature extraction -> Data visualization -> Model building -> Validation model -> Decision application
+### Data Cleaning and Preprocessing Data Cleaning and Preprocessing
+* **Day_05 : How to create a DataFrame? How to read other information? **
     * 用 [pd.DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 來建立，[練習網站](https://github.com/guipsamora/pandas_exercises)
     * CSV
         ```py
